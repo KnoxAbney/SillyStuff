@@ -44,7 +44,6 @@ int main() {
         } else {
           system("clear");
           cout << "Please enter your choice:\n" << "\n1) Rock\n" << "2) Paper\n" << "3) Scissors\n";
-          continue;
         } 
     }
 
