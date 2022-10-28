@@ -5,12 +5,14 @@ using namespace std;
 
 int main(){
 
+  // Initialize variables ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   vector<int> numbers;
   vector<string> endings = {"st","nd","rd","th","th","th"};
   int number;
   int even = 0;
   int odd = 1;
 
+  // Give User prompt and push input to vector ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   cout << "You must enter 6 numbers one at a time and press 'enter' after each. The program will then output the sum of the even numbers and the product of the odd numbers.\n";
 
   for(int i = 0; i < 6; i++){
@@ -21,6 +23,7 @@ int main(){
     
   }
 
+  // Create sum for even numbers and product for odd numbers ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   for(int j = 0; j < numbers.size(); j++){
 
     if (numbers[j]%2 == 0){
@@ -31,6 +34,7 @@ int main(){
 
   }
 
+  // Print out results ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   cout << "The sum of the even numbers is: " << even << "\n";
 
   cout << "The product of the odd numbers is: " << odd << "\n";
