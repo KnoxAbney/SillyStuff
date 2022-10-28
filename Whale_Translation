@@ -6,7 +6,6 @@ int main() {
 
   std::string phrase;
   std::vector<char> whale;
-  std::vector<char> vowels = {'a', 'e', 'i', 'o', 'u'};
 
   std::cout << "Please enter a phrase to translate to whale:\n";
 
@@ -24,13 +23,13 @@ int main() {
       }
   }
 
-std::cout << "Your phrase translated to whale is:\n";
+  std::cout << "Your phrase translated to whale is:\n";
 
-for (int k = 0; k < whale.size(); k++){
+  for (int k = 0; k < whale.size(); k++){
 
-  std::cout << whale[k];
+    std::cout << whale[k];
 
-}
+  }
 
   
 }
